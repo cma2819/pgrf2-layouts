@@ -1,3 +1,2 @@
-# nodecg-vue-ts-template
+# pgrf2-layouts
 
-NodeCG bundle template with Vue.ts and Vuex
