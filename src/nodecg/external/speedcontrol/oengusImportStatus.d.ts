@@ -5,19 +5,9 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
-	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
-	};
+export interface OengusImportStatus {
+	importing?: boolean;
+	item?: number;
+	total?: number;
+	[k: string]: any;
 }

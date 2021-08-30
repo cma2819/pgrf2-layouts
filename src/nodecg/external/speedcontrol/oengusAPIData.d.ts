@@ -5,19 +5,12 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
-	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
-	};
+export interface OengusAPIData {
+	state?: 'off' | 'authenticating' | 'on';
+	authorizeVia?: 'discord' | 'twitch' | 'twitter';
+	accessToken?: string;
+	refreshToken?: string;
+	id?: string;
+	username?: string;
+	usernameJapanese?: string;
 }

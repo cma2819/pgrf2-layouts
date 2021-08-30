@@ -1,5 +1,5 @@
 {
-    "name": "bundle-name",
+    "name": "pgrf2-layouts",
     "version": "0.9.0",
     "description": "<Description of this bundle>",
     "homepage": "<homepage url>",
@@ -16,20 +16,58 @@
     ],
     "nodecg": {
         "compatibleRange": "^1.1.1",
-        "dashboardPanels": [
-            {
-                "name": "example",
-                "title": "Example Dashboard",
-                "width": "2",
-                "headerColor": "#bcbcff",
-                "file": "index.html"
-            }
-        ],
         "graphics": [
             {
-                "file": "index.html",
+                "file": "setup/index.html",
                 "width": 1920,
-                "height": 150
+                "height": 1080
+            },
+            {
+                "file": "sd-solo/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "sd-race/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "hd-solo/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "hd-race/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "gb-solo/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "gba-solo/index.html",
+                "width": 1920,
+                "height": 1080
+            }
+        ],
+        "assetCategories": [
+            {
+                "name": "logo",
+                "title": "Logo",
+                "allowedTypes": ["jpg", "png", "jpeg"]
+            },
+            {
+                "name": "ome-logo",
+                "title": "OME-Logo",
+                "allowedTypes": ["jpg", "png", "jpeg"]
+            },
+            {
+                "name": "background",
+                "title": "Background",
+                "allowedTypes": ["jpg", "png", "jpeg"]
             }
         ]
     },

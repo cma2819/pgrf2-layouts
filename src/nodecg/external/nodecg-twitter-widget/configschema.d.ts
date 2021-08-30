@@ -6,18 +6,17 @@
  */
 
 export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
+	googleApiKey?: string;
+	spotify?: {
+		clientId?: string;
+		clientSecret?: string;
+		redirectUri?: string;
 	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
+	twitter?: {
+		targetWords?: string[];
+		consumerKey?: string;
+		consumerSecret?: string;
+		accessTokenKey?: string;
+		accessTokenSecret?: string;
 	};
 }

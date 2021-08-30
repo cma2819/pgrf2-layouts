@@ -5,19 +5,14 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
+export type CommentatorArray = {
+	id: string;
+	assignedRunIdArray: string[];
+	name: string;
+	social: {
+		twitch?: string;
+		nico?: string;
+		youtube?: string;
+		twitter?: string;
 	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
-	};
-}
+}[];

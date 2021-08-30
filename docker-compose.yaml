@@ -5,6 +5,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./:/nodecg/bundles/bundle-name
+      - ./:/nodecg/bundles/pgrf2-layouts
+      - ./assets:/nodecg/assets
       - ./cfg:/nodecg/cfg
       - ./db:/nodecg/db

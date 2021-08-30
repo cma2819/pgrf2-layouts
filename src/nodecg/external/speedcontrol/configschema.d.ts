@@ -6,18 +6,5 @@
  */
 
 export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
-	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
-	};
+	hashtag: string;
 }

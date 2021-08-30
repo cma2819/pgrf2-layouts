@@ -5,19 +5,13 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
+export interface SpeedcontrolPlayer {
+	name: string;
+	id: string;
+	teamID: string;
+	country?: string;
+	social: {
+		twitch?: string;
 	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
-	};
+	externalID?: string;
 }

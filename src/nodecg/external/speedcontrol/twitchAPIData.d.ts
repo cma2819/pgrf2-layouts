@@ -5,19 +5,12 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Configschema {
-	event?: {
-		name: string;
-		hashTag: string;
-	};
-	theme?: {
-		primary: string;
-		secondary: string;
-		text: string;
-		timer: {
-			pause?: string;
-			running?: string;
-			finish?: string;
-		};
-	};
+export interface TwitchAPIData {
+	state: 'off' | 'authenticating' | 'on';
+	sync: boolean;
+	accessToken?: string;
+	refreshToken?: string;
+	channelName?: string;
+	channelID?: string;
+	featuredChannels: string[];
 }
