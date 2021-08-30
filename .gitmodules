@@ -1,0 +1,3 @@
+[submodule "src/pgrf2-layout-html"]
+	path = src/pgrf2-layout-html
+	url = https://github.com/cma2819/pgrf2-layout-html.git
