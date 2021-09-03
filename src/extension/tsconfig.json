@@ -1,5 +1,12 @@
 {
-    "extends": "../../tsconfig",
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "types": ["node"],
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "rootDir": ".",
+        "outDir": "../../extension"
+    },
     "include":[
         "**/*.ts",
         "../nodecg/**/*.ts"

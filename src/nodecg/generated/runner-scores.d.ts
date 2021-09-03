@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface CurrentDatetime {
-	date: string;
-	time: string;
-}
+export type RunnerScores = {
+	id: string;
+	score: number | null;
+}[];

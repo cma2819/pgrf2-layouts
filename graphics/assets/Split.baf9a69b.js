@@ -1,0 +1,1 @@
+import{p as s,a,f as t,c as p,b as e,d as o,t as r,u as d}from"./vendor.82ab3a02.js";s("data-v-725a3895");const c={class:"split time"};a();const i={props:{id:Number},setup(s){const a=s,i=t(),n=p((()=>i.getters.splitOfId(a.id)));return(s,a)=>(e(),o("p",c,r(d(n)),1))},__scopeId:"data-v-725a3895"};export{i as _};

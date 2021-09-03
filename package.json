@@ -16,6 +16,15 @@
     ],
     "nodecg": {
         "compatibleRange": "^1.1.1",
+        "dashboardPanels": [
+            {
+                "name": "score",
+                "title": "Score",
+                "width": "4",
+                "headerColor": "#bcbcff",
+                "file": "index.html"
+            }
+        ],
         "graphics": [
             {
                 "file": "setup/index.html",
@@ -33,7 +42,17 @@
                 "height": 1080
             },
             {
+                "file": "nes-tetris/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
                 "file": "hd-solo/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "hd-solo-with-cam/index.html",
                 "width": 1920,
                 "height": 1080
             },
@@ -57,17 +76,29 @@
             {
                 "name": "logo",
                 "title": "Logo",
-                "allowedTypes": ["jpg", "png", "jpeg"]
+                "allowedTypes": [
+                    "jpg",
+                    "png",
+                    "jpeg"
+                ]
             },
             {
                 "name": "ome-logo",
                 "title": "OME-Logo",
-                "allowedTypes": ["jpg", "png", "jpeg"]
+                "allowedTypes": [
+                    "jpg",
+                    "png",
+                    "jpeg"
+                ]
             },
             {
                 "name": "background",
                 "title": "Background",
-                "allowedTypes": ["jpg", "png", "jpeg"]
+                "allowedTypes": [
+                    "jpg",
+                    "png",
+                    "jpeg"
+                ]
             }
         ]
     },
@@ -79,10 +110,8 @@
         "build": "run-s build:*",
         "build:dashboard": "parcel build src/browser/dashboard/*/*.html --out-dir dashboard --public-url ./",
         "build:extension": "tsc -b src/extension/",
-        "build:graphics": "parcel build src/browser/graphics/*/*.html --out-dir graphics --public-url ./",
         "watch:dashboard": "parcel watch src/browser/dashboard/*/*.html --out-dir dashboard --public-url ./",
         "watch:extension": "tsc -b src/extension/ -w",
-        "watch:graphics": "parcel watch src/browser/graphics/*/*.html --out-dir graphics --public-url ./",
         "start": "node ../..",
         "schema-types": "nodecg schema-types -o src/nodecg/generated schemas"
     },
@@ -95,6 +124,7 @@
         "url": "https://github.com/<author>/<repository>/issues"
     },
     "devDependencies": {
+        "@types/clone": "^2.1.1",
         "@types/node": "^13.13.40",
         "@typescript-eslint/eslint-plugin": "^2.34.0",
         "@typescript-eslint/parser": "^2.34.0",
@@ -113,7 +143,9 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.3",
+        "clone": "^2.1.2",
         "vue": "^2.6.12",
+        "vue-hot-reload-api": "^2.3.4",
         "vuetify": "^2.4.3",
         "vuex": "^3.6.2"
     }

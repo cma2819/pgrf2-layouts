@@ -1,13 +1,14 @@
 import { Assets } from "./asset";
-import { CurrentDatetime } from './generated';
+import { RunnerScores } from './generated';
 
 type ReplicantMap = {
   'assets:background': Assets;
   'assets:logo': Assets;
-  'current-datetime': CurrentDatetime;
+  'runner-scores': RunnerScores;
 };
 
 export {
     Assets,
-    ReplicantMap
+    RunnerScores,
+    ReplicantMap,
 };

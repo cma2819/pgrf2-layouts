@@ -1,0 +1,1 @@
+import{i as o}from"./vendor.82ab3a02.js";import{_ as a}from"./SDRace.5ff3f72d.js";import{s as r}from"./index.323d1d4a.js";import"./Footer.f31b230b.js";import"./Split.baf9a69b.js";import"./WatchReplicant.6590e94a.js";o(a).use(r).mount("#root");
