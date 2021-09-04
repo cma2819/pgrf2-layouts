@@ -1,0 +1,1 @@
+import{i as o}from"./vendor.82ab3a02.js";import{_ as r}from"./SDRace.e4d03d70.js";import{s}from"./index.27240014.js";import"./Footer.d6e861c6.js";import"./Split.baf9a69b.js";o(r).use(s).mount("#root");
